@@ -12,17 +12,6 @@ class Q1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_q1)
 
-        val checkBox1=findViewById<CheckBox>(R.id.checkBox1)
-        val result = StringBuilder()
-        val btn=findViewById<Button>(R.id.submit)
-        result.append("Selected Items")
 
-        btn.setOnClickListener {
-            if(checkBox1.isChecked)
-            {
-                result.append("\nPizza 100Rs")
-            }
-            Toast.makeText(applicationContext,result.toString(),Toast.LENGTH_SHORT).show()
-        }
     }
 }
